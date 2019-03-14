@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "user-login-store",
+  "description": "chrome extension for encrypted user-login storage",
+  "version": "1.0.0",
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "unlimitedStorage",
+    "contentSettings",
+    "storage",
+    "privacy",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "icons": {
+    "16": "app/img/icon_16x16.png",
+    "48": "app/img/icon_48x48.png",
+    "128": "app/img/icon_128x128.png"
+  },
+  "browser_action": {
+    "default_icon": "app/img/icon_128x128.png",
+    "default_title": "user-login-store",
+    "default_popup": "index.html"
+  },
+  "content_security_policy": "script-src 'unsafe-eval' 'self';  object-src 'self'"
+}
